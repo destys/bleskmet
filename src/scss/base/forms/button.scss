@@ -3,13 +3,10 @@
 
 .button {
 	display: inline-flex;
-	padding: rem(9) rem(13);
-	background-color: $mainColor;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 10px;
-	font-weight: 500;
-	font-size: rem(18);
-	color: #fff;
+	justify-content: center;
+	align-items: center;
+	
+	padding: 0;
 
 	@media (any-hover: hover) {
 		&:hover {

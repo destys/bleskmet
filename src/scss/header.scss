@@ -1,47 +1,5 @@
 //====================================================================================================
 
-.header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: rem(28) 0;
-	background-color: #f3f3f3;
-	z-index: 100;
-	transition: padding 0.2s ease;
-
-	&._header-scroll {
-		padding: 10px 0;
-	}
-
-	// .header__container
-	&__container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 30px;
-	}
-	// .header__logo
-	&__logo {
-	}
-	// .header__contacts
-	&__contacts {
-		display: flex;
-		align-items: center;
-		gap: rem(20);
-	}
-}
-.contacts-header {
-	// .contacts-header__phone
-	&__phone {
-		margin-right: rem(30);
-		font-weight: 500;
-	}
-	// .contacts-header__social
-	&__social {
-	}
-}
-
 //====================================================================================================
 
 //Burger

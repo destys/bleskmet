@@ -9,22 +9,17 @@ textarea {
 	appearance: none;
 }
 .input {
-	margin-bottom: rem(10);
+	margin-bottom: 0;
 	width: 100%;
 	display: block;
-	padding: rem(9) rem(11);
+	padding: 0;
 	background: #ffffff;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 10px;
+	border: 1px solid $mainColor;
+	border-radius: 4px;
 
-	font-weight: 500;
-	font-size: rem(18);
 	color: $mainColor;
 
 	&::placeholder {
-		font-weight: 500;
-		font-size: rem(18);
-		opacity: 0.5;
 	}
 	&._focus {
 	}
