@@ -1,5 +1,54 @@
 <header class="header">
-	<div class="header__container">
-		
+	<div class="header__top top-header">
+		<div class="top-header__container">
+			<div class="top-header__item _icon-clock">По будням с 09:00 до 18:00</div>
+			<a href="mailto:info@some-dev.ru" class="top-header__item _icon-mail">bleskmet@mail.ru</a>
+			<a href="info@some-dev.ru" class="top-header__item _icon-wa">WhatsApp</a>
+		</div>
+	</div>
+	<div class="header__center center-header">
+		<div class="center-header__container">
+			<a href="/home.html" class="center-header__logo">
+				<img data-src="../img/logo.png" alt="logo" width="175" height="40" />
+			</a>
+			<a href="tel:" class="center-header__header">+7(495) 517-15-59</a>
+			<div class="center-header__search search">
+				<form action="#" class="search__form">
+					<input autocomplete="off" type="text" name="form[]" placeholder="Поиск товаров" class="input">
+					<button type="submit" class="search__button _icon-search"><span
+							class="fs_0">Отправить</span></button>
+				</form>
+			</div>
+			<div class="center-header__actions actions-header">
+				<a href="#" class="center-header__item _icon-heart"><span>0</span></a>
+				<a href="#" class="center-header__item _icon-cart"><span>0</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom bottom-header">
+		<div class="bottom-header__container">
+			<div data-spollers class="bottom-header__catalog spollers">
+				<div class="spollers__item">
+					<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
+					<div class="spollers__body">Контент спойлера</div>
+				</div>
+			</div>
+			<div class="bottom-header__menu menu">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link">главная</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">о компании</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">проекты</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">потрфолио</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">видеокурсы</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">блог</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">доставка</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<button class="bottom-header__callback" data-popup="#callback">Заказать замер</button>
+		</div>
 	</div>
 </header>

@@ -9,8 +9,40 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 [class*="_icon-"] {
+	display: inline-flex;
+	align-items: center;
+	gap: rem(5);
+
 	&:before {
 		@extend %ic;
 		display: block;
 	}
+}
+
+._icon-tg:before {
+	content: "\e900";
+}
+._icon-phone:before {
+	content: "\e901";
+}
+._icon-mail:before {
+	content: "\e902";
+}
+._icon-wa:before {
+	content: "\e903";
+}
+._icon-search:before {
+	content: "\e904";
+}
+._icon-heart:before {
+	content: "\e905";
+}
+._icon-cross:before {
+	content: "\e906";
+}
+._icon-clock:before {
+	content: "\e907";
+}
+._icon-cart:before {
+	content: "\e908";
 }
