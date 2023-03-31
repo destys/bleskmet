@@ -183,11 +183,13 @@
 			// .spollers__body
 			&__body {
 				position: absolute;
+				z-index: 10;
 				top: calc(100% + 15px);
 				width: 100%;
 				border: 1px solid #fff;
 				border-top: 0;
 				border-radius: 0;
+				background-color: #fff;
 				box-shadow: 0px 48.5109px 77.7064px rgba(0, 0, 0, 0.250149),
 					0px 28.4064px 41.5455px rgba(0, 0, 0, 0.153943), 0px 16.0482px 23.2901px rgba(0, 0, 0, 0.0782502),
 					0px 7.93246px 12.3692px rgba(0, 0, 0, 0.0302205), 0px 2.74794px 5.1471px rgba(0, 0, 0, 0.00580761);

@@ -87,9 +87,10 @@ body {
 @if ($responsiveType==1) {
 	// Отзывчивая
 	[class*="__container"] {
+		width: 100%;
 		@if ($maxWidthContainer>0) {
 			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
+			box-sizing: border-box;
 			margin: 0 auto;
 		}
 		@if ($containerPadding>0) {
@@ -99,10 +100,11 @@ body {
 } @else {
 	// По брейк-поинтам
 	[class*="__container"] {
+		width: 100%;
 		margin: 0 auto;
 		@if ($maxWidthContainer>0) {
 			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
+			box-sizing: border-box;
 		} @else {
 			@if ($containerPadding>0) {
 				padding: 0 rem(math.div($containerPadding, 2));
@@ -133,6 +135,7 @@ body {
 // Подключение стилей отдельных блоков
 @import "header";
 @import "footer";
+@import "category-item";
 
 // Подключение стилей отдельных страниц
 @import "home";
