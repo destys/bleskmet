@@ -55,6 +55,8 @@ body::after {
 	width: 100%;
 	max-width: 900px;
 	border-radius: 20px;
+	position: relative;
+	z-index: 2000;
 	.lock & {
 		visibility: visible;
 	}

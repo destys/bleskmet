@@ -1,3 +1,106 @@
 //====================================================================================================
+.footer {
+    padding: rem(25) 0 rem(31);
+    background-color: $dark;
+    // .footer__container
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(30);
+
+        color: #fff;
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+    // .footer__info
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+            &:not(:last-child) {
+                margin-bottom: rem(15);
+            }
+        }
+    }
+    // .footer__contacts
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        margin-top: rem(5);
+
+        & > * {
+            &:not(:last-child) {
+                margin-bottom: rem(15);
+            }
+        }
+    }
+    // .footer__menu
+    &__menu {
+        margin-top: rem(5);
+
+        &.menu_primary {
+            @media (min-width: $mobile) {
+                display: none;
+            }
+
+            @media (min-width: $tablet) {
+                display: block;
+            }
+        }
+        .menu {
+            // .menu__body
+            &__body {
+            }
+            // .menu__list
+            &__list {
+                flex-direction: column;
+                gap: 0;
+            }
+            // .menu__item
+            &__item {
+                &:not(:last-child) {
+                    margin-bottom: rem(13);
+                }
+            }
+            // .menu__link
+            &__link {
+            }
+        }
+    }
+}
+.info-footer {
+    // .info-footer__logo
+    &__logo {
+    }
+    // .info-footer__text
+    &__text {
+        max-width: rem(263);
+    }
+    // .info-footer__copy
+    &__copy {
+    }
+    // .info-footer__privacy
+    &__privacy {
+        text-decoration: underline !important;
+    }
+    // .info-footer__dev
+    &__dev {
+        text-decoration: underline !important;
+    }
+}
+.contacts-footer {
+    // .contacts-footer__item
+    &__item {
+        align-items: flex-start;
+        max-width: rem(290);
+
+        &::before {
+            margin-top: rem(2);
+        }
+    }
+}
 
 //====================================================================================================

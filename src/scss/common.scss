@@ -2,10 +2,33 @@
 
 .fs_0 {
     font-size: 0;
+
+    &_icon {
+        font-size: 0;
+        gap: 0;
+        &::before{
+            font-size: rem(24);
+        }
+    }
 }
 
 ._s-title {
     font-weight: 600;
-    font-size: rem(24);
+    @include adaptiveValue("font-size", 24, 21);
     text-transform: uppercase;
+}
+
+.crumbs {
+    margin: rem(30) 0 rem(37);
+    ul {
+        display: flex;
+        gap: rem(10);
+
+        a {
+            &::after {
+                content: "/";
+                padding-left: rem(10);
+            }
+        }
+    }
 }

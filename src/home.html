@@ -11,19 +11,6 @@
 			<!-- Intro -->
 			<section class="intro">
 				<div class="intro__container">
-					<div class="intro__content">
-						<h1 class="intro__title">готовые перила высшего качества</h1>
-						<div class="intro__subtitle">Умеем. Воплощаем. Восхищаем.</div>
-						<div class="intro__text">
-							<ul>
-								<li>из нержавеющей стали </li>
-								<li>металлические</li>
-								<li>деревянные</li>
-								<li>лофт, ковка</li>
-							</ul>
-						</div>
-						<a href="catalog.html" class="intro__button button button_transparent">перейти в каталог</a>
-					</div>
 					<!-- Оболочка слайдера -->
 					<div class="intro__slider swiper">
 						<!-- Двигающееся часть слайдера -->
@@ -43,6 +30,19 @@
 						</div>
 						<!-- Если нужна пагинация -->
 						<div class="intro__pagination"></div>
+					</div>
+					<div class="intro__content">
+						<h1 class="intro__title">готовые перила высшего качества</h1>
+						<div class="intro__subtitle">Умеем. Воплощаем. Восхищаем.</div>
+						<div class="intro__text">
+							<ul>
+								<li>из нержавеющей стали </li>
+								<li>металлические</li>
+								<li>деревянные</li>
+								<li>лофт, ковка</li>
+							</ul>
+						</div>
+						<a href="catalog.html" class="intro__button button button_transparent">перейти в каталог</a>
 					</div>
 				</div>
 			</section>
@@ -229,6 +229,8 @@
 				</div>
 			</section>
 			<!-- /.Advantages -->
+			@@include('html/_callback.htm',{})
+			@@include('html/_text-block.htm',{})
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>

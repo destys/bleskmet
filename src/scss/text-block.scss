@@ -1,0 +1,46 @@
+.text {
+    margin-bottom: rem(60);
+
+    // .text__container
+    &__container {
+        h2 {
+            margin-bottom: rem(30);
+            font-weight: 600;
+            @include adaptiveValue("font-size", 24, 21);
+            text-transform: uppercase;
+        }
+    }
+    // .text__content
+    &__content {
+        font-weight: 400;
+
+        h3,
+        h4 {
+            margin-bottom: rem(20);
+            font-size: rem(21);
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: rem(20);
+            }
+        }
+
+        ul {
+            li {
+                display: flex;
+                gap: rem(5);
+                &::before {
+                    content: "•";
+                    display: block;
+                }
+            }
+        }
+
+        @media (min-width: $tablet) {
+            column-width: 48%;
+            column-count: 2;
+            column-gap: 4%;
+        }
+    }
+}
