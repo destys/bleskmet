@@ -4,9 +4,12 @@
     }
     // .catalog__wrapper
     &__wrapper {
-        display: grid;
-        grid-template-columns: rem(260) 1fr;
-        gap: rem(30);
+
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: rem(260) 1fr;
+            gap: rem(30);
+        }
     }
     // .catalog__title
     &__title {

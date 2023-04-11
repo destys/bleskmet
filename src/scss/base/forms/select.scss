@@ -10,11 +10,10 @@
 	&__title {
 		color: inherit;
 		text-align: left;
-		border: 1px solid #d9d9d9;
-		background-color: #fff;
+		background-color: #f2f2f7;
 		cursor: pointer;
 		width: 100%;
-		border-radius: 4px;
+		height: rem(40);
 	}
 	// .select__value
 	&__value {
@@ -58,7 +57,7 @@
 	&__options {
 		color: #000;
 		position: absolute;
-		top: 29px;
+		top: 40px;
 		border-radius: 0 0 4px 4px;
 		min-width: 100%;
 		left: 0;
@@ -84,6 +83,7 @@
 	// .select__option
 	&__option {
 		width: 100%;
+		height: rem(40);
 		display: block;
 		text-align: left;
 		cursor: pointer;

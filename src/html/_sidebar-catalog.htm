@@ -1,70 +1,83 @@
 <!-- Sidebar -->
+
 <aside class="sidebar">
-    <div class="sidebar__item item-sidebar">
-        <div class="item-sidebar__title">Каталог товаров</div>
-        <ul class="item-sidebar__catalog catalog-sidebar">
-            <li class="catalog-sidebar__item"><a href="#" class="catalog-sidebar__link _active">Перила под ключ</a></li>
-            <li class="catalog-sidebar__item"><a href="#" class="catalog-sidebar__link">Комплектующие</a></li>
-            <li class="catalog-sidebar__item"><a href="#" class="catalog-sidebar__link">Секции на заказ</a></li>
-            <li class="catalog-sidebar__item"><a href="#" class="catalog-sidebar__link">Наборы</a></li>
-        </ul>
-    </div>
-    <div class="sidebar__item item-sidebar">
-        <div class="item-sidebar__title">Фильтры</div>
-        <div data-spollers class="item-sidebar__filters filters-sidebar">
-            <div class="filters-sidebar__item">
-                <button type="button" data-spoller class="filters-sidebar__title">Монтаж</button>
-                <div class="filters-sidebar__body">
-                    <div class="filters-sidebar__checkbox checkbox">
-                        <input id="v_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-                            name="form[]">
-                        <label for="v_1" class="checkbox__label"><span class="checkbox__text">Перила под ключ
-                            </span></label>
-                    </div>
-                    <div class="filters-sidebar__checkbox checkbox">
-                        <input id="v_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-                            name="form[]">
-                        <label for="v_2" class="checkbox__label"><span class="checkbox__text">Наборы под
-                                сборку</span></label>
-                    </div>
-                    <div class="filters-sidebar__checkbox checkbox">
-                        <input id="v_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-                            name="form[]">
-                        <label for="v_3" class="checkbox__label"><span class="checkbox__text">Перила
-                                секциями</span></label>
-                    </div>
-                    <div class="filters-sidebar__checkbox checkbox">
-                        <input id="v_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-                            name="form[]">
-                        <label for="v_4" class="checkbox__label"><span class="checkbox__text">Без монтажа</span></label>
+    <button class="sidebar__open _icon-cross">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M11.4369 0H0.563154C0.0635131 0 -0.188604 0.606234 0.165419 0.960258L4.5 5.29549V10.125C4.5 10.3085 4.58955 10.4805 4.73993 10.5858L6.61492 11.8979C6.98484 12.1568 7.49999 11.8944 7.49999 11.437V5.29549L11.8347 0.960258C12.188 0.606937 11.9376 0 11.4369 0Z"
+                fill="white" />
+        </svg>
+    </button>
+    <div class="sidebar__list">
+        <div class="sidebar__item item-sidebar">
+            <div class="item-sidebar__title">Каталог товаров</div>
+            <ul class="item-sidebar__catalog catalog-sidebar">
+                <li class="catalog-sidebar__item"><a href="#" class="catalog-sidebar__link _active">Перила под ключ</a>
+                </li>
+                <li class="catalog-sidebar__item"><a href="#" class="catalog-sidebar__link">Комплектующие</a></li>
+                <li class="catalog-sidebar__item"><a href="#" class="catalog-sidebar__link">Секции на заказ</a></li>
+                <li class="catalog-sidebar__item"><a href="#" class="catalog-sidebar__link">Наборы</a></li>
+            </ul>
+        </div>
+        <div class="sidebar__item item-sidebar">
+            <div class="item-sidebar__title">Фильтры</div>
+            <div data-spollers class="item-sidebar__filters filters-sidebar">
+                <div class="filters-sidebar__item">
+                    <button type="button" data-spoller class="filters-sidebar__title">Монтаж</button>
+                    <div class="filters-sidebar__body">
+                        <div class="filters-sidebar__checkbox checkbox">
+                            <input id="v_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                name="form[]">
+                            <label for="v_1" class="checkbox__label"><span class="checkbox__text">Перила под ключ
+                                </span></label>
+                        </div>
+                        <div class="filters-sidebar__checkbox checkbox">
+                            <input id="v_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                name="form[]">
+                            <label for="v_2" class="checkbox__label"><span class="checkbox__text">Наборы под
+                                    сборку</span></label>
+                        </div>
+                        <div class="filters-sidebar__checkbox checkbox">
+                            <input id="v_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                name="form[]">
+                            <label for="v_3" class="checkbox__label"><span class="checkbox__text">Перила
+                                    секциями</span></label>
+                        </div>
+                        <div class="filters-sidebar__checkbox checkbox">
+                            <input id="v_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                name="form[]">
+                            <label for="v_4" class="checkbox__label"><span class="checkbox__text">Без
+                                    монтажа</span></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="filters-sidebar__item">
-                <button type="button" data-spoller class="filters-sidebar__title">Монтаж</button>
-                <div class="filters-sidebar__body">
-                    <div class="filters-sidebar__checkbox checkbox">
-                        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-                            name="form[]">
-                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Перила под ключ
-                            </span></label>
-                    </div>
-                    <div class="filters-sidebar__checkbox checkbox">
-                        <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-                            name="form[]">
-                        <label for="c_2" class="checkbox__label"><span class="checkbox__text">Наборы под
-                                сборку</span></label>
-                    </div>
-                    <div class="filters-sidebar__checkbox checkbox">
-                        <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-                            name="form[]">
-                        <label for="c_3" class="checkbox__label"><span class="checkbox__text">Перила
-                                секциями</span></label>
-                    </div>
-                    <div class="filters-sidebar__checkbox checkbox">
-                        <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-                            name="form[]">
-                        <label for="c_4" class="checkbox__label"><span class="checkbox__text">Без монтажа</span></label>
+                <div class="filters-sidebar__item">
+                    <button type="button" data-spoller class="filters-sidebar__title">Монтаж</button>
+                    <div class="filters-sidebar__body">
+                        <div class="filters-sidebar__checkbox checkbox">
+                            <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                name="form[]">
+                            <label for="c_1" class="checkbox__label"><span class="checkbox__text">Перила под ключ
+                                </span></label>
+                        </div>
+                        <div class="filters-sidebar__checkbox checkbox">
+                            <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                name="form[]">
+                            <label for="c_2" class="checkbox__label"><span class="checkbox__text">Наборы под
+                                    сборку</span></label>
+                        </div>
+                        <div class="filters-sidebar__checkbox checkbox">
+                            <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                name="form[]">
+                            <label for="c_3" class="checkbox__label"><span class="checkbox__text">Перила
+                                    секциями</span></label>
+                        </div>
+                        <div class="filters-sidebar__checkbox checkbox">
+                            <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                name="form[]">
+                            <label for="c_4" class="checkbox__label"><span class="checkbox__text">Без
+                                    монтажа</span></label>
+                        </div>
                     </div>
                 </div>
             </div>

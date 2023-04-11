@@ -141,7 +141,10 @@ body {
 @import "text-block";
 @import "sidebar";
 @import "product";
+@import "related";
 
 // Подключение стилей отдельных страниц
 @import "home";
 @import "catalog";
+@import "cart";
+@import "checkout";

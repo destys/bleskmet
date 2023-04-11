@@ -30,3 +30,15 @@ if (catalogItems.length && catalogSubMenus.length) {
 }
 
 //========================================================================================================================================================
+
+// Show sidebar
+
+const sidebarOpen = document.querySelector('.sidebar__open');
+const sidebar = document.querySelector('.sidebar');
+
+if (sidebar && sidebarOpen) {
+    sidebarOpen.addEventListener('click', ()=> {
+        document.body.classList.toggle('open-sidebar');
+    })
+}
+

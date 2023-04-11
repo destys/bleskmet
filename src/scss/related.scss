@@ -1,0 +1,17 @@
+.related {
+    margin-bottom: rem(80);
+    // .related__container
+    &__container {
+    }
+    // .related__title
+    &__title {
+        margin-bottom: rem(60);
+        padding-bottom: rem(12);
+
+        border-bottom: 1px solid #000;
+    }
+    // .related__list
+    &__list {
+        @include gridCards("fill", rem(300), 1fr, rem(30));
+    }
+}

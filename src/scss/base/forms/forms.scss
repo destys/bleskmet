@@ -2,6 +2,13 @@
 // Снипет (HTML):
 .form {
 	&__row {
+		margin-bottom: rem(10);
+
+		label {
+			display: block;
+			margin-bottom: rem(5);
+			font-weight: 400;
+		}
 	}
 	&__input {
 	}
@@ -18,7 +25,7 @@
 
 // <INPUTS>
 // Снипет (HTML): inp
-// @import "input";
+@import "input";
 
 // <CHECK>
 // Снипет (HTML): chk
@@ -30,7 +37,7 @@
 
 // <SELECT>
 // Снипет (HTML): sel
-// @import "select";
+@import "select";
 
 // <RATING>
 // Снипет (HTML): rating

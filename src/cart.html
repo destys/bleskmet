@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Корзина"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="cart">
+                <div class="cart__container">
+                    @@include('html/_crumbs.htm',{})
+                    <h1 class="cart__title _s-title">Корзина</h1>
+                    <table class="cart__table">
+                        <thead>
+                            <tr>
+                                <th>Артикул</th>
+                                <th></th>
+                                <th>Наименование товара</th>
+                                <th>Цена</th>
+                                <th>Количество</th>
+                                <th>Стоимость</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="sku">0123</td>
+                                <td class="image">
+                                    <img src="@img/product1.jpg" alt="">
+                                </td>
+                                <td>Перила из нержавеющей стали шлифованной №1570</td>
+                                <td class="price">4 417 ₽/шт</td>
+                                <td class="qty">
+                                    <div class="quantity">
+                                        <button type="button" class="quantity__button quantity__button_minus"></button>
+                                        <div class="quantity__input">
+                                            <input autocomplete="off" type="text" name="form[]" value="1">
+                                        </div>
+                                        <button type="button" class="quantity__button quantity__button_plus"></button>
+                                    </div>
+                                </td>
+                                <td class="total">4 417 ₽</td>
+                                <td class="delete">
+                                    <button>
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.75781 7.56091H7.27344V14.6494H8.75781V7.56091Z"
+                                                fill="#A7AAAF" />
+                                            <path d="M11.7266 7.56091H10.2422V14.6494H11.7266V7.56091Z"
+                                                fill="#A7AAAF" />
+                                            <path d="M5.78906 7.56091H4.30469V14.6494H5.78906V7.56091Z"
+                                                fill="#A7AAAF" />
+                                            <path
+                                                d="M13.7778 2.47359H11.5185V2.03496C11.5185 0.912881 10.5216 0 9.2963 0H6.7037C5.47837 0 4.48148 0.912881 4.48148 2.03496V2.47359H2.22222C0.996889 2.47359 0 3.38647 0 4.50855V6.20662H1.48148V15.33C1.48148 16.4521 2.47837 17.365 3.7037 17.365H12.2963C13.5216 17.365 14.5185 16.4521 14.5185 15.33V6.20662H16V4.50855C16 3.38647 15.0031 2.47359 13.7778 2.47359ZM5.96296 2.03496C5.96296 1.66093 6.29526 1.35664 6.7037 1.35664H9.2963C9.70474 1.35664 10.037 1.66093 10.037 2.03496V2.47359H5.96296V2.03496ZM13.037 15.33C13.037 15.704 12.7047 16.0083 12.2963 16.0083H3.7037C3.29526 16.0083 2.96296 15.704 2.96296 15.33V6.20662H13.037V15.33ZM14.5185 4.84998H1.48148V4.50855C1.48148 4.13452 1.81378 3.83023 2.22222 3.83023H13.7778C14.1862 3.83023 14.5185 4.13452 14.5185 4.50855V4.84998Z"
+                                                fill="#A7AAAF" />
+                                        </svg></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sku">0123</td>
+                                <td class="image">
+                                    <img src="@img/product1.jpg" alt="">
+                                </td>
+                                <td>Перила из нержавеющей стали шлифованной №1570</td>
+                                <td class="price">4 417 ₽/шт</td>
+                                <td class="qty">
+                                    <div class="quantity">
+                                        <button type="button" class="quantity__button quantity__button_minus"></button>
+                                        <div class="quantity__input">
+                                            <input autocomplete="off" type="text" name="form[]" value="1">
+                                        </div>
+                                        <button type="button" class="quantity__button quantity__button_plus"></button>
+                                    </div>
+                                </td>
+                                <td class="total">4 417 ₽</td>
+                                <td class="delete">
+                                    <button>
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.75781 7.56091H7.27344V14.6494H8.75781V7.56091Z"
+                                                fill="#A7AAAF" />
+                                            <path d="M11.7266 7.56091H10.2422V14.6494H11.7266V7.56091Z"
+                                                fill="#A7AAAF" />
+                                            <path d="M5.78906 7.56091H4.30469V14.6494H5.78906V7.56091Z"
+                                                fill="#A7AAAF" />
+                                            <path
+                                                d="M13.7778 2.47359H11.5185V2.03496C11.5185 0.912881 10.5216 0 9.2963 0H6.7037C5.47837 0 4.48148 0.912881 4.48148 2.03496V2.47359H2.22222C0.996889 2.47359 0 3.38647 0 4.50855V6.20662H1.48148V15.33C1.48148 16.4521 2.47837 17.365 3.7037 17.365H12.2963C13.5216 17.365 14.5185 16.4521 14.5185 15.33V6.20662H16V4.50855C16 3.38647 15.0031 2.47359 13.7778 2.47359ZM5.96296 2.03496C5.96296 1.66093 6.29526 1.35664 6.7037 1.35664H9.2963C9.70474 1.35664 10.037 1.66093 10.037 2.03496V2.47359H5.96296V2.03496ZM13.037 15.33C13.037 15.704 12.7047 16.0083 12.2963 16.0083H3.7037C3.29526 16.0083 2.96296 15.704 2.96296 15.33V6.20662H13.037V15.33ZM14.5185 4.84998H1.48148V4.50855C1.48148 4.13452 1.81378 3.83023 2.22222 3.83023H13.7778C14.1862 3.83023 14.5185 4.13452 14.5185 4.50855V4.84998Z"
+                                                fill="#A7AAAF" />
+                                        </svg></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cart__total total-cart">
+                        <div class="total-cart__count">Всего <span>2</span> товара на сумму</div>
+                        <div class="total-cart__price"><span>8 834</span> ₽</div>
+                        <a href="checkout.html" class="total-cart__button button">Оформить заказ</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

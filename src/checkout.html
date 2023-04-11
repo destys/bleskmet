@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Оформление заказа"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="checkout">
+                <div class="checkout__container">
+                    @@include('html/_crumbs.htm',{})
+                    <h1 class="checkout__title _s-title">Оформление заказа</h1>
+                    <form class="checkout__wrapper">
+                        <div class="checkout__form form">
+                            <div class="form__row">
+                                <label>Имя*</label>
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+                                    class="input" />
+                            </div>
+                            <div class="form__row">
+                                <label>Регион*</label>
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+                                    class="input" />
+                            </div>
+                            <div class="form__row">
+                                <label>Населенный пункт *</label>
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+                                    class="input" />
+                            </div>
+                            <div class="form__row">
+                                <label>Адрес*</label>
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+                                    class="input" />
+                            </div>
+                            <div class="form__row">
+                                <label>Система налогообложения *</label>
+                                <select name="form[]" class="form">
+                                    <option value="1" selected>Упрощенная</option>
+                                    <option value="2">с НДС</option>
+                                    <option value="3">Физ.лицо</option>
+                                </select>
+                            </div>
+                            <div class="form__row">
+                                <label>Способ доставки</label>
+                                <select name="form[]" class="form">
+                                    <option value="1" selected>Самовывоз</option>
+                                    <option value="2">Доставка</option>
+                                </select>
+                            </div>
+                            <div class="form__row">
+                                <label>Email *</label>
+                                <input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder=""
+                                    class="input" />
+                            </div>
+                            <div class="form__row">
+                                <label>Телефон *</label>
+                                <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder=""
+                                    class="input" />
+                            </div>
+                            <div class="form__row">
+                                <label>Примечание к заказу (необязательно)</label>
+                                <textarea autocomplete="off" name="form[]"
+                                    placeholder="Примечание к Вашему заказу, например, особые пожелания отделу доставки"
+                                    data-error="Ошибка" class="input"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="checkout__info info-checkout">
+                            <h3 class="info-checkout__title">ваш заказ</h3>
+                            <table class="info-checkout__total">
+                                <thead>
+                                    <tr>
+                                        <th>товар</th>
+                                        <th></th>
+                                        <th>итого</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="image">
+                                            <img src="@img/product1.jpg" alt="">
+                                        </td>
+                                        <td class="title">Перила из нержавейки шлифованной №1570 × <span>1</span></td>
+                                        <td class="price">4 417 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="image">
+                                            <img src="@img/product1.jpg" alt="">
+                                        </td>
+                                        <td class="title">Перила из нержавейки шлифованной №1570 × <span>1</span></td>
+                                        <td class="price">4 417 ₽</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Итого</td>
+                                        <td></td>
+                                        <td class="total">8 834 ₽</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="info-checkout__privacy">
+                                Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей
+                                работы
+                                с сайтом и для других целей, описанных в нашей <a href="#" target="_blank">политика
+                                    конфиденциальности</a>.
+                            </div>
+                            <button type="submit" class="info-checkout__button button">подтвердить заказ</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
