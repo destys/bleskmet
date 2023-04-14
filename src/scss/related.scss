@@ -12,6 +12,18 @@
     }
     // .related__list
     &__list {
-        @include gridCards("fill", rem(300), 1fr, rem(30));
+        @include gridCards("fill", rem(280), 1fr, rem(30));
+
+        @media (min-width: $mobileSmall) {
+            @include gridCards("fill", rem(350), 1fr, rem(30));
+        }
+
+        @media (min-width: $pc) {
+            @include gridCards("fill", rem(300), 1fr, rem(30));
+        }
+
+        @media (min-width: em(1920)) {
+            @include gridCards("fit", rem(300), 1fr, rem(30));
+        }
     }
 }

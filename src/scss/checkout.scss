@@ -11,12 +11,21 @@
     }
     // .checkout__wrapper
     &__wrapper {
-        display: grid;
-        grid-template-columns: 1fr rem(569);
-        @include adaptiveValue("gap", 149, 20);
+        @media (min-width: $mobile) {
+            display: grid;
+            grid-template-columns: 1fr rem(369);
+            @include adaptiveValue("gap", 149, 20, 1600, 991, 1);
+        }
+
+        @media (min-width: $tablet) {
+            grid-template-columns: 1fr rem(569);
+        }
     }
     // .checkout__form
     &__form {
+        @media (max-width: $mobileSmall) {
+            margin-bottom: rem(40);
+        }
     }
     // .checkout__info
     &__info {
@@ -75,6 +84,7 @@
             td {
                 padding: rem(40) rem(10);
                 text-align: center;
+                white-space: nowrap;
             }
         }
 

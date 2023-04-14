@@ -21,7 +21,17 @@
                     padding: rem(11) 0;
                     font-weight: 400;
                     text-align: center;
+
+                    &.sku {
+                        @media (min-width: $pc) {
+                            display: table-cell;
+                        }
+                    }
                 }
+            }
+
+            @media (max-width: $mobileSmall) {
+                display: none;
             }
         }
 
@@ -33,19 +43,40 @@
                     padding: rem(10);
                     text-align: center;
                     vertical-align: middle;
+
+                    @media (max-width: $mobileSmall) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
                 }
             }
         }
 
         .sku {
+            @media (min-width: $mobileSmall) {
+                display: none;
+            }
+
+            @media (min-width: $pc) {
+                display: table-cell;
+            }
         }
         .image {
+            @media (min-width: $mobileSmall) {
+                display: none;
+            }
+
+            @media (min-width: $mobile) {
+                display: table-cell;
+            }
             img {
                 width: rem(70);
                 height: rem(80);
             }
         }
         .price {
+            white-space: nowrap;
         }
         .qty {
             .quantity {

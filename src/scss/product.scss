@@ -117,18 +117,37 @@
     &-page {
         .product-popup__wrapper {
             margin-bottom: rem(40);
-            @include adaptiveValue("gap", 149, 30);
+            @include adaptiveValue("gap", 149, 30, 1600, 991, 1);
+
+            @media (max-width: $mobile) {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         .product-popup__image {
-            flex: 0 0 30%;
-            max-width: 30%;
+            width: 100%;
+            max-width: none;
+
+            @media (min-width: $mobile) {
+                flex: 0 0 40%;
+                max-width: 40%;
+            }
+
+            @media (min-width: $tablet) {
+                flex: 0 0 30%;
+                max-width: 30%;
+            }
         }
         // .product-page__slider
         &__slider {
-            margin-bottom: rem(26);
             padding: rem(10);
             width: 100%;
             box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+            max-height: rem(600);
+
+            @media (min-width: $pc) {
+                margin-bottom: rem(26);
+            }
 
             // .product-page__slider_thumbs
             &_thumbs {
@@ -165,12 +184,17 @@
             @include adaptiveValue("gap", 153, 20);
             margin-bottom: rem(30);
             border-bottom: 1px solid #a7aaaf;
+
+            @media (max-width: $mobile) {
+                overflow-x: scroll;
+            }
         }
         // .product-page__title
         &__title {
             padding-bottom: rem(10);
             font-weight: 500;
             font-size: rem(16);
+            white-space: nowrap;
 
             position: relative;
 
@@ -201,6 +225,12 @@
         // .product-page__body
         &__body {
             font-size: rem(16);
+
+            @media (max-width: $mobile) {
+                iframe {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -336,6 +366,12 @@
             gap: rem(20);
             padding: rem(10) 0;
             border-bottom: 1px dotted #a7aaaf;
+
+            p {
+                &:last-child {
+                    text-align: right;
+                }
+            }
         }
     }
     // .product-popup__link
