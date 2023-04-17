@@ -175,7 +175,7 @@ import './files/scroll/lazyload.js';
 Документация плагина: https://www.lightgalleryjs.com/docs/
 Сниппет(HTML):
 */
-// import "./files/gallery.js";
+import "./files/gallery.js";
 
 /* 
 НЕОБХОДИМ jQuery (включить в head)

@@ -18,6 +18,12 @@
     text-transform: uppercase;
 }
 
+._p-title {
+    margin-bottom: rem(60);
+    padding-bottom: rem(12);
+    border-bottom: 1px solid #000;
+}
+
 .crumbs {
     margin: rem(30) 0 rem(37);
     ul {

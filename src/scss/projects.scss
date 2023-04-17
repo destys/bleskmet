@@ -1,0 +1,14 @@
+.projects {
+    margin-bottom: rem(60);
+    
+    // .projects__container
+    &__container {
+    }
+    // .projects__title
+    &__title {
+    }
+    // .projects__list
+    &__list {
+        @include gridCards("fill", rem(300), 1fr, rem(30));
+    }
+}

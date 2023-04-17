@@ -142,6 +142,10 @@ body {
 @import "sidebar";
 @import "product";
 @import "related";
+@import "project-item";
+@import "videocource-item";
+@import "portfolio-item";
+@import "blog-item";
 
 // Подключение стилей отдельных страниц
 @import "home";
@@ -149,3 +153,7 @@ body {
 @import "cart";
 @import "checkout";
 @import "about";
+@import "projects";
+@import "videocources";
+@import "portfolio";
+@import "blog";

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Видеокурсы"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="videocources">
+                <div class="videocources__container">
+                    @@include('html/_crumbs.htm',{})
+                    <h1 class="videocources__title _s-title _p-title">Полезные видео - видео перил и установка перил
+                    </h1>
+                    <div class="videocources__list">
+                        @@include("html/_videocources-item.htm',{
+                        "title":"Имидживый ролик",
+                        "mark":"Имидживый ролик"
+                        })
+                        @@include("html/_videocources-item.htm',{
+                        "title":"Имидживый ролик",
+                        "mark":"это - тоже мы!"
+                        })
+                        @@include("html/_videocources-item.htm',{
+                        "title":"как верно снять размеры перил",
+                        "mark":"это - тоже мы!"
+                        })
+                        @@include("html/_videocources-item.htm',{
+                        "title":"как верно снять размеры перил",
+                        "mark":"это - тоже мы!"
+                        })
+                        @@include("html/_videocources-item.htm',{
+                        "title":"как верно снять размеры перил",
+                        "mark":"это - тоже мы!"
+                        })
+                        @@include("html/_videocources-item.htm',{
+                        "title":"как верно снять размеры перил",
+                        "mark":"это - тоже мы!"
+                        })
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
