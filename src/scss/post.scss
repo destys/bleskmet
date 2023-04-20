@@ -1,0 +1,130 @@
+.post-page {
+    margin-bottom: rem(60);
+    // .post-page__container
+    &__container {
+    }
+    // .post-page__title
+    &__title {
+    }
+    // .post-page__nav
+    &__nav {
+        display: none;
+
+        @media (min-width: $mobile) {
+            display: flex;
+            justify-content: space-between;
+            gap: rem(30);
+            margin-bottom: rem(50);
+        }
+    }
+    // .post-page__content
+    &__content {
+        @include gridCards("fit", rem(300), 1fr, rem(30));
+    }
+}
+.nav-post {
+    // .nav-post__link
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+
+        span {
+            line-height: 1;
+        }
+
+        path {
+            transition: fill 0.4s ease;
+        }
+
+        &:hover {
+            color: $blue;
+
+            path {
+                fill: $blue;
+            }
+        }
+
+        // ._prev
+        &._prev {
+        }
+        // ._blog
+        &._blog {
+        }
+        // ._next
+        &._next {
+            flex-direction: row-reverse;
+            svg {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}
+.content-post {
+    // .content-post__video
+    &__video {
+        iframe {
+            width: 100%;
+            min-height: rem(388);
+        }
+    }
+    // .content-post__text
+    &__text {
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+        }
+
+        h2 {
+            margin-bottom: rem(28);
+            font-size: rem(24);
+        }
+
+        h3 {
+            margin-bottom: rem(24);
+            font-size: rem(18);
+        }
+
+        p,
+        h4,
+        ul,
+        ol {
+            margin-bottom: rem(20);
+        }
+
+        ul {
+            li {
+                list-style: inside;
+            }
+        }
+
+        ol {
+            li {
+                list-style: auto inside;
+            }
+        }
+    }
+
+    // .content-post__share
+    &__share {
+        display: flex;
+        align-items: center;
+        gap: rem(15);
+        margin-top: rem(40);
+        padding-top: rem(45);
+        border-top: 1px solid #c4c4c4;
+
+        a {
+            path {
+                transition: fill 0.4s ease;
+            }
+
+            &:hover {
+                path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}

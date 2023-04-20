@@ -6,7 +6,7 @@
     &_icon {
         font-size: 0;
         gap: 0;
-        &::before{
+        &::before {
             font-size: rem(24);
         }
     }
@@ -14,7 +14,7 @@
 
 ._s-title {
     font-weight: 600;
-    @include adaptiveValue("font-size", 24, 21);
+    @include adaptiveValue("font-size", 24, 18);
     text-transform: uppercase;
 }
 
@@ -36,5 +36,17 @@
                 padding-left: rem(10);
             }
         }
+    }
+}
+
+.constructor {
+    @include gridCards("fill", rem(300), 1fr, rem(20) rem(30));
+    margin-bottom: rem(40);
+
+    // .constructor__input
+    &__input {
+    }
+    // .constructor__label
+    &__label {
     }
 }
