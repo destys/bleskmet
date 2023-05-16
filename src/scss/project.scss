@@ -1,12 +1,12 @@
-.post-page {
+.project-page {
     margin-bottom: rem(60);
-    // .post-page__container
+    // .project-page__container
     &__container {
     }
-    // .post-page__title
+    // .project-page__title
     &__title {
     }
-    // .post-page__nav
+    // .project-page__nav
     &__nav {
         display: none;
 
@@ -17,7 +17,7 @@
             margin-bottom: rem(50);
         }
     }
-    // .post-page__content
+    // .project-page__content
     &__content {
         @include gridCards("fit", rem(300), 1fr, rem(30));
     }
@@ -60,56 +60,20 @@
         }
     }
 }
-.content-post {
-    // .content-post__video
+.content-project {
+    // .content-project__video
     &__video {
         iframe {
             width: 100%;
             min-height: rem(388);
         }
     }
-    // .content-post__text
-    &__text {
-        margin: 0 auto;
-        max-width: rem(900);
+    // .content-project__3d
+    &__3d {
         
-        h2,
-        h3,
-        h4 {
-            font-weight: 600;
-        }
-
-        h2 {
-            margin-bottom: rem(28);
-            font-size: rem(24);
-        }
-
-        h3 {
-            margin-bottom: rem(24);
-            font-size: rem(18);
-        }
-
-        p,
-        h4,
-        ul,
-        ol {
-            margin-bottom: rem(20);
-        }
-
-        ul {
-            li {
-                list-style: inside;
-            }
-        }
-
-        ol {
-            li {
-                list-style: auto inside;
-            }
-        }
     }
 
-    // .content-post__share
+    // .content-project__share
     &__share {
         display: flex;
         align-items: center;

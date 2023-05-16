@@ -26,15 +26,9 @@
 
 .crumbs {
     margin: rem(30) 0 rem(37);
-    ul {
-        display: flex;
-        gap: rem(10);
-
-        a {
-            &::after {
-                content: "/";
-                padding-left: rem(10);
-            }
+    a {
+        &:hover {
+            color: $blue;
         }
     }
 }
@@ -49,4 +43,8 @@
     // .constructor__label
     &__label {
     }
+}
+
+.video__list {
+    @include gridCards("fit", rem(300), 1fr, rem(20));
 }

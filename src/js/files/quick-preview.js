@@ -8,7 +8,6 @@ const products = document.querySelectorAll('.product'),
 if (products.length) {
     products.forEach(item => {
         item.addEventListener('click', (e) => {
-            console.log('e: ', e.target);
             if (e.target.classList.contains('footer-product__quickshow')) {
                 const product = {
                     id: item.dataset.id,

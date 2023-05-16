@@ -106,7 +106,8 @@
         margin-bottom: rem(5);
     }
     // .filters-sidebar__title
-    &__title {
+    &__title,
+    .bapf_head {
         display: block;
         width: 100%;
         margin-bottom: rem(5);
@@ -140,11 +141,18 @@
             }
         }
     }
+    .bapf_head {
+        &::before,
+        &::after {
+            content: none !important;
+        }
+    }
     // .filters-sidebar__body
     &__body {
     }
     // .filters-sidebar__checkbox
-    &__checkbox {
-        padding: rem(10) rem(21);
+    &__checkbox,
+    .bapf_body li {
+        padding: rem(10) rem(21) !important;
     }
 }
