@@ -1,4 +1,7 @@
 .catalog {
+    position: relative;
+    z-index: 1000;
+    
     // .catalog__container
     &__container {
     }

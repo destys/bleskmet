@@ -390,9 +390,9 @@
 	&__link {
 		text-transform: uppercase;
 
-		.touch & {
+		/* .touch & {
 			pointer-events: none;
-		}
+		} */
 
 		@media (max-width: $mobile) {
 			white-space: nowrap;
