@@ -1,0 +1,40 @@
+.callback {
+    @include adaptiveValue("margin-bottom", 60, 30);
+
+    // .callback__container
+    &__container {
+        padding-top: rem(40);
+        padding-bottom: rem(60);
+        background-color: #343537;
+    }
+    // .callback__title
+    &__title {
+        margin-bottom: rem(24);
+
+        font-weight: 600;
+        @include adaptiveValue("font-size", 24, 21);
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    // .callback__list
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(20);
+    }
+    // .callback__item
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: rem(50);
+        height: rem(50);
+        /* background-color: #fff; */
+        border-radius: 50%;
+
+        font-size: rem(25);
+    }
+}

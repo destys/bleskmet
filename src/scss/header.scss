@@ -1,5 +1,8 @@
 //====================================================================================================
 .header {
+	position: relative;
+	z-index: 10000;
+
 	// .header__top
 	&__top {
 		padding: rem(7) 0;
@@ -354,6 +357,22 @@
 			gap: rem(30);
 			overflow-x: scroll;
 			margin-bottom: rem(20);
+
+			&::-webkit-scrollbar {
+				width: 18px;
+				border-radius: 20px;
+			}
+
+			&::-webkit-scrollbar-track {
+				background: transparent;
+				border-radius: 20px;
+			}
+			&::-webkit-scrollbar-thumb {
+				width: 24px;
+				background: $blue;
+				border: 5px solid #fff;
+				border-radius: 15px;
+			}
 		}
 	}
 	// .catalog-header__item
@@ -556,5 +575,3 @@
 			0px 2.74794px 5.1471px rgba(0, 0, 0, 0.00580761);
 	}
 }
-
-
